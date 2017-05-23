@@ -20,7 +20,7 @@ export class MyValidatorDirective implements OnInit,AfterContentInit{
     console.log( this.todoSvc );
     (this.ngModelCtrl.$validators as ImyValidators).myValidator = (modelValue,viewValue)=>{
       var value = modelValue || viewValue;
-      return viewValue ==='Martin';
+      return value ==='Martin';
     }
   }
 
